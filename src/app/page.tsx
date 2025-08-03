@@ -1,18 +1,9 @@
-import Header from '../components/Header';
-
+// app/page.tsx
 export default function Home() {
   return (
-    <div style={{
-      backgroundColor: '#121212',
-      minHeight: '100vh',
-      color: 'white',
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
-      <Header />
-      <main style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <h2>Welcome to the Dark Themed Home Page!</h2>
-      </main>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100 text-gray-800">
+      <h1 className="text-4xl font-bold mb-4">Welcome to Next.js!</h1>
+      <p className="text-lg">This is your default homepage. Edit <code>app/page.tsx</code> to change this content.</p>
+    </main>
   );
 }
